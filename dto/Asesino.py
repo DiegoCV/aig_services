@@ -1,3 +1,10 @@
+class Asesino():
+  
+  @staticmethod    
+  def validar(data): 
+    return True
+
+
 '''
   La idea con esto es utilizar los dao como una forma para palidar nuestras seudo-entidades
   https://python-jsonschema.readthedocs.io/en/stable/
@@ -19,10 +26,4 @@ from jsonschema import validate
 incorrecto
 validate(instance={"name" : "Eggs", "price" : "Invalid"}, schema=schema)              
 
-'''                     
-class Asesino():
-  
-  @staticmethod    
-    def validar(data): 
-        return False
-
+'''  

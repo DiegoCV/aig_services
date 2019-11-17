@@ -1,9 +1,9 @@
 #configuracion para la base de datos sencillo
 aig_bd:
-    apiKey: apiKey
-    authDomain: projectId.firebaseapp.com
-    databaseURL: https://databaseName.firebaseio.com
-    storageBucket: projectId.appspot.com
+    apiKey: AIzaSyDIMJNZdBUVYorhXibp_aDGeOW4f73fxZ8
+    authDomain: feedme-a3516.firebaseapp.com
+    databaseURL: https://feedme-a3516.firebaseio.com/
+    storageBucket: feedme-a3516.appspot.com
 
 #aspectos globales de ejecucion
 #general:

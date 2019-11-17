@@ -2,8 +2,8 @@ from flask import jsonify
 from util.Firma import * 
 firma = Firma()
 
-def reponder():
-	return jsonify({'status' : '1','message':'Al parecer no eres tan malo despues de todo'})
+def responder(algo):
+	return jsonify({'status' : '1','message':'Al parecer no eres tan malo despues de todo','algo':algo})
 
 def responderError():
 	return jsonify({'status' : '0','message':'Tienes un mal dia'})

@@ -3,7 +3,7 @@ from dao.factory.FactoryDao import *
 
 class AsesinoFacade():
   
-  def insert(self,asesino):
+  def insert(self, asesino):
     asesinoDao = FactoryDao.getAsesinoDao()
     return asesinoDao.insert(asesino)
     

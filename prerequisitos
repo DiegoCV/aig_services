@@ -1,6 +1,9 @@
 pip install Flask (Flask 1.0.2)
 pip install SQLAlchemy (SQLAlchemy 1.3.5)
- pip install jsonschema
+pip install jsonschema
+pip install Pyrebase (3.0.27)
+pip install PyYAML
+pip install jwt
 
 Todos los controladores para base de datos que usted quiera usar deben estar basdas en el estandar 'DBAPI'
 
@@ -48,4 +51,4 @@ mssql
 gestores default
 	flask
 	PyMySQL
-	yaml pip install PyYAML
+	yaml 

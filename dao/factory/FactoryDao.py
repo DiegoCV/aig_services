@@ -5,7 +5,8 @@ from dao.entities.AsesinoDao import *
 class FactoryDao():
     
     @staticmethod    
-    def getAsesinoDao(): 
-        return AsesinoDao(Conexion.obtenerConexion())
+    def getAsesinoDao():
+        conexion = Conexion()
+        return AsesinoDao(conexion.obtenerConexion())
 
  

@@ -1,9 +1,8 @@
-from dto.Asesino import *
 from facade.AsesinoFacade import *
 
 class AsesinoController():  
 
-	def insertar(asesino):
+	def insertar(self,asesino):
 		asesino_facade = AsesinoFacade()
 		return asesino_facade.insert(asesino)
 
