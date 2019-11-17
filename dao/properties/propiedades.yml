@@ -1,0 +1,12 @@
+#configuracion para la base de datos sencillo
+aig_bd:
+    apiKey: apiKey
+    authDomain: projectId.firebaseapp.com
+    databaseURL: https://databaseName.firebaseio.com
+    storageBucket: projectId.appspot.com
+
+#aspectos globales de ejecucion
+#general:
+#    gestor_default: mysql
+#    database_default: sencillo
+     

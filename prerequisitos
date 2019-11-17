@@ -1,0 +1,50 @@
+pip install Flask (Flask 1.0.2)
+pip install SQLAlchemy (SQLAlchemy 1.3.5)
+
+Todos los controladores para base de datos que usted quiera usar deben estar basdas en el estandar 'DBAPI'
+
+Esta es la url utilizada por el motor de sqlalchemy para conectarse
+
+dialect+driver://username:password@host:port/database
+
+dialect = es el nombre del gestor de base de datos que se esta usando. sqlalchemy soporta los siguientes por defecto: postgresql, mysql, oracle, mssql, sqlite
+
+driver = el driver es el controlador o el ultimo nivel para acceder a la base de datos, depende de un tercero, claro esta, que estos controladores trabajan bajo el estandar DBAPI. usted puede cambiar controlador a su preferencia
+
+postgresql
+	psycopg2 (default)
+	pg8000
+	psycopg2cffi
+ 	py-postgresql
+	pygresql
+	zxJDBC for Jython
+
+mysql
+	mysql-python (default)
+	mysqlclient
+	PyMySQL
+	MySQL Connector/Python
+	CyMySQL
+	OurSQL
+	Google Cloud SQL
+	PyODBC
+	zxjdbc for Jython
+
+oracle
+	cx-Oracle (default)
+	zxJDBC for Jython
+
+mssql
+	PyODBC (default)
+	mxODBC
+	pymssql
+	zxJDBC for Jython
+	adodbapi
+
+	conn = create_engine('mysql+pymysql://root:Soporte@localhost:3306/sencillo')
+
+/////////////////////////////////////////////////////
+gestores default
+	flask
+	PyMySQL
+	yaml pip install PyYAML
