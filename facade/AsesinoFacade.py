@@ -1,6 +1,5 @@
 from dao.entities.AsesinoDao import *
 from dao.factory.FactoryDao import *
-from dto.Asesino import *
 
 class AsesinoFacade():
   

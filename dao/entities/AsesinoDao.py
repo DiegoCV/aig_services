@@ -9,10 +9,9 @@ class AsesinoDao():
     id_asesino = None
     try:
       con = self.cn.database()
-      con.child("revisiones").push(revision)
+      con.child("restaurante").push(asesino)
     except Exception as e: 
       print(e)
-      #print('Got error {!r}, errno is {}'.format(e, e.args[0]))
     finally:
       self.cn.close()
       return id_asesino
