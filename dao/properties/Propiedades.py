@@ -2,26 +2,26 @@ import yaml
 import os
 
 class Propiedades():
-	
+
+	#Esto es para efectos de pruebas locales, hay que cambiarlo despues a variables de entorno
 	def __init__(self):
 		self.cfg
-		with open(os.getcwd()+"\\dao\\properties\\propiedades.yml", 'r') as ymlfile:
+		with open(os.getcwd()+"dao\\properties\\propiedades.yml", 'r') as ymlfile:
 			self.cfg = yaml.load(ymlfile)
 
-	def get_gestor_default():
-		return cfg['general']['gestor_default']
+	def get_apiKey():
+		return cfg['aig_bd']['apiKey']
 
-	def get_dbName_default():
-		return cfg['general']['database_default']
+	def get_authDomain():
+		return cfg['aig_bd']['authDomain']
 
-	def get_usuario(database):
-		return cfg[database]['username']
+	def get_databaseURL():
+		return cfg['aig_bd']['databaseURL']
 
-	def get_password(database):
-		return cfg[database]['password']
+	def get_storageBucket():
+		return cfg['aig_bd']['storageBucket']
 
-	def get_host(database): 
-		return cfg[database]['host']
+	
 
-	def get_port(database):
-		return cfg[database]['port']
+
+	
